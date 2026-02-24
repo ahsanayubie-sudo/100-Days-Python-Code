@@ -14,11 +14,22 @@ else:
 
 
 if pepperoni == "y":
-   bill += 10
+   if pizza == "s":
+    bill += 3
+   elif pizza == "m":
+    bill += 5
+   else:
+    bill += 7
+
    
 if extra_cheese == "y":
-    bill += 10
+       if pizza == "s":
+          bill += 3
+       elif pizza == "m":
+          bill += 5
+       else:
+          bill += 7
     
         
     
-print (f"Your totel bill is {bill}")
+print (f"Your total bill is ${bill}")
